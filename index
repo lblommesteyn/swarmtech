@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Swarmtech</title>
+        <link rel="stylesheet" href="main.css">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Carmel Kurland: I program stuff.">
+        <meta name="theme-color" content="#000000"/>
+    </head>
+    <body>
+        <div class="preloader">
+            <img src="img/Main.svg">
+        </div>
+        <script>
+            var start = new Date();
+        </script>
+        
+        <div class="mainpane">
+            <h1>Lola's Bees Status</h1>
+            <section>
+                <h2>Temperature</h2>
+            </section>
+            
+            <section>
+                <h2>Humidity</h2>
+            </section>
+            
+            <section>
+                <h2>Weight</h2>
+            </section>
+              
+
+                
+
+               
+        
+        
+        <script defer src="jquery-3.4.1.js"></script>
+        <script defer src="site.js"></script>
+    </body>
+</html>
