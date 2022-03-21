@@ -16,7 +16,7 @@ Success will be measured through how accurately we reach all our objectives outl
 
 1.	Record and measure humidity in beehive remotely
   ■	Metric: working humidity sensor 
-2.	Send the acquired data to a mobile device app
+3.	Send the acquired data to a mobile device app
   ■	Metric: working server/AWS 
 3.	Organize information gained from the sensor on a website organized by the hive, time, and data type (interactive view)  
   ■	Metric: working web application 
@@ -32,8 +32,12 @@ Success will be measured through how accurately we reach all our objectives outl
   ■	Metric: Creating a remote system
 
 Timeline for measurements to be completed
+
 March 8th: Full plan and ideation finished. This includes a mock website, CAD model, wiring plans and material list.
+
 April 1st: Fully functioning prototype for one beehive completed. This benchmark will conclude the course portion of this project. At this time, we will work with the client to test our design onsite with a real beehive, outside the course. 
+
 April 20th: The client will let us know what else they require to scale this design. We will contact or reapply to the innovation fund if this requires any additional funding.
+
 November 2022: The design will be completed at this time. This allows the design to be implemented for the winter as our client has suggested. This project is only for winter monitoring, as of now. This means our team can work in collaboration with Lola Bees for the duration of the summer, and the beginning of 2022-2023 school year. 
 
