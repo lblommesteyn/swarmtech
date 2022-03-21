@@ -1,4 +1,4 @@
-# swarmtech - Es1050 Design Project
+# swarmtech
 
 Team: Jackson Freeman (jfreem63@uwo.ca), Mayank Walia (mwalia26@uwo.ca), Nicolas Mingorance-Geraldo (nmingora@uwo.ca), Matthew Simpson (msimps63@uwo.ca), Peter Hutchinson (phutch2@uwo.ca)
 
