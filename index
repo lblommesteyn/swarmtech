@@ -3,40 +3,316 @@
     <head>
         <title>Swarmtech</title>
         <link rel="stylesheet" href="main.css">
-        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Carmel Kurland: I program stuff.">
+        <meta name="description" content="Lola's Bees Monitoring site">
         <meta name="theme-color" content="#000000"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
     </head>
+
+
     <body>
-        <div class="preloader">
-            <img src="img/Main.svg">
-        </div>
-        <script>
-            var start = new Date();
-        </script>
-        
         <div class="mainpane">
             <h1>Lola's Bees Status</h1>
-            <section>
-                <h2>Temperature</h2>
-            </section>
-            
-            <section>
-                <h2>Humidity</h2>
-            </section>
-            
-            <section>
-                <h2>Weight</h2>
-            </section>
-              
+            <div class="accordion">
 
-                
+                <!-- Accordion section 1 -->
+                <details class="acc-group">
+                    <summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Hive 1 Data</summary>
+                    <div class="tgl-panel">
+                        <!-- Section 1's content -->
+                        <H2>Hive 1 content</H2>
+                        <div class="container">
+                            <div>                
+                                <script src = "https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"> 
+                                </script>
+                                <!--This imports the graph extension-->
+                                   
+                                   <canvas id="Mychart1" style="width:100%;max-width:300px"></canvas> <!--Creates the outline for the chart in HTML!-->
+                                
+                                <script type="text/javascript"> 
+                                var xValues = ['1:00 am March 10th','6:00 am march 10th', '12:00 pm march 10th','1:00 am march 11th', '6:00 am march 11th','12:00 pm march 11th,']
+                                var yValues = [23.4,24.5,24.3,25.5,25.5,26.0] 
+                                var myChart = new Chart("Mychart1", {
+                                  type: "line",
+                                  data: { labels: xValues,
+                                    datasets: [{
+                                        label: "Temperature",
+                                        backgroundColor: "rgba(0,0,0,0.1)",
+                                      borderColor: "#FF0000",
+                                      data: yValues
+                                  }]},
+                                  options: {}
+                                });
+                                </script>
+                            </div>
+                            
+                            
+                            <div>
+                                <canvas id="Mychart2" style="width:100%;max-width:800px", <!text-align: right></canvas> <Outline in HTML for second graph!>
+                                <!--Graph NUMBER 2!-->
+                                <script> 
+                                
+                                var xValues = ['1:00 am March 10th','6:00 am march 10th', '12:00 pm march 10th','1:00 am march 11th', '6:00 am march 11th','12:00 pm march 11th,']
+                                var yValues = [4.5,4.3,4.6,4.7,4.6,4.6,]
+                                var myChart = new Chart("Mychart2", {
+                                  type: "line",
+                                  data: { labels: xValues,
+                                    datasets: [{
+                                        label: "Humidity",
+                                        backgroundColor: "rgba(0,0,0,0.1)",
+                                      borderColor: "#00FFFF",
+                                      data: yValues
+                                  }]},
+                                  options: {}
+                                });
+                                </script></div>  
+                            <div><canvas id="Mychart3" style="width:100%;max-width:800px", text-align: right></canvas>
+                                <!--Graph NUMBER 3!-->
 
-               
-        
-        
-        <script defer src="jquery-3.4.1.js"></script>
-        <script defer src="site.js"></script>
+                                <script> 
+                                
+                                var xValues = ['1:00 am March 10th','6:00 am march 10th', '12:00 pm march 10th','1:00 am march 11th', '6:00 am march 11th','12:00 pm march 11th,']
+                                var yValues = [103,105,104,110,102,102,]
+                                var myChart = new Chart("Mychart3", {
+                                  type: "line",
+                                  data: { labels: xValues,
+                                    datasets: [{
+                                        label: "Weight",
+                                        backgroundColor: "rgba(0,0,0,0.1)",
+                                      borderColor: "#00FF00",
+                                      data: yValues
+                                  }]},
+                                  options: {}
+                                });
+                                </script></div>
+                          </div>
+                    </div>
+                </details>
+
+                <!-- Accordion section 2 -->
+                <details class="acc-group">
+                    <summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Hive 2 Data</summary>
+                    <div class="tgl-panel">
+                        <!-- Section 2's content -->
+                        <H2>Hive 2 content</H2>
+                        <div class="container">
+                            <div>                
+                               <canvas id="Mychart4" style="width:100%;max-width:300px"></canvas> <!--Creates the outline for the chart in HTML!-->
+                                
+                                <script type="text/javascript"> 
+                                var xValues = ['1:00 am March 10th','6:00 am march 10th', '12:00 pm march 10th','1:00 am march 11th', '6:00 am march 11th','12:00 pm march 11th,']
+                                var yValues = [23.4,24.5,24.3,25.5,25.5,26.0] 
+                                var myChart = new Chart("Mychart4", {
+                                  type: "line",
+                                  data: { labels: xValues,
+                                    datasets: [{
+                                        label: "Temperature",
+                                        backgroundColor: "rgba(0,0,0,0.1)",
+                                      borderColor: "#FF0000",
+                                      data: yValues
+                                  }]},
+                                  options: {}
+                                });
+                                </script>
+                            </div>
+                            
+                            
+                            <div>
+                                <canvas id="Mychart5" style="width:100%;max-width:800px", <!text-align: right></canvas> <Outline in HTML for second graph!>
+                                <!--Graph NUMBER 2!-->
+                                <script> 
+                                
+                                var xValues = ['1:00 am March 10th','6:00 am march 10th', '12:00 pm march 10th','1:00 am march 11th', '6:00 am march 11th','12:00 pm march 11th,']
+                                var yValues = [4.5,4.3,4.6,4.7,4.6,4.6,]
+                                var myChart = new Chart("Mychart5", {
+                                  type: "line",
+                                  data: { labels: xValues,
+                                    datasets: [{
+                                        label: "Humidity",
+                                        backgroundColor: "rgba(0,0,0,0.1)",
+                                      borderColor: "#00FFFF",
+                                      data: yValues
+                                  }]},
+                                  options: {}
+                                });
+                                </script></div>  
+                            <div><canvas id="Mychart6" style="width:100%;max-width:800px", text-align: right></canvas>
+                                <!--Graph NUMBER 3!-->
+
+                                <script> 
+                                
+                                var xValues = ['1:00 am March 10th','6:00 am march 10th', '12:00 pm march 10th','1:00 am march 11th', '6:00 am march 11th','12:00 pm march 11th,']
+                                var yValues = [103,105,104,110,102,102,]
+                                var myChart = new Chart("Mychart6", {
+                                  type: "line",
+                                  data: { labels: xValues,
+                                    datasets: [{
+                                        label: "Weight",
+                                        backgroundColor: "rgba(0,0,0,0.1)",
+                                      borderColor: "#00FF00",
+                                      data: yValues
+                                  }]},
+                                  options: {}
+                                });
+                                </script></div>
+                          </div>
+                          </div>
+                    </div>
+                </details>
+
+                 <!-- Accordion section 3 -->
+                 <details class="acc-group">
+                    <summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Hive 3 Data</summary>
+                    <div class="tgl-panel">
+                        <H2>Hive 3 content</H2>
+                        <div class="container">
+                            <div>                
+                                <canvas id="Mychart7" style="width:100%;max-width:300px"></canvas> <!--Creates the outline for the chart in HTML!-->
+                                 
+                                 <script type="text/javascript"> 
+                                 var xValues = ['1:00 am March 10th','6:00 am march 10th', '12:00 pm march 10th','1:00 am march 11th', '6:00 am march 11th','12:00 pm march 11th,']
+                                 var yValues = [23.4,24.5,24.3,25.5,25.5,26.0] 
+                                 var myChart = new Chart("Mychart7", {
+                                   type: "line",
+                                   data: { labels: xValues,
+                                     datasets: [{
+                                         label: "Temperature",
+                                         backgroundColor: "rgba(0,0,0,0.1)",
+                                       borderColor: "#FF0000",
+                                       data: yValues
+                                   }]},
+                                   options: {}
+                                 });
+                                 </script>
+                             </div>
+                             
+                             
+                             <div>
+                                 <canvas id="Mychart8" style="width:100%;max-width:800px", <!text-align: right></canvas> <Outline in HTML for second graph!>
+                                 <!--Graph NUMBER 2!-->
+                                 <script> 
+                                 
+                                 var xValues = ['1:00 am March 10th','6:00 am march 10th', '12:00 pm march 10th','1:00 am march 11th', '6:00 am march 11th','12:00 pm march 11th,']
+                                 var yValues = [4.5,4.3,4.6,4.7,4.6,4.6,]
+                                 var myChart = new Chart("Mychart8", {
+                                   type: "line",
+                                   data: { labels: xValues,
+                                     datasets: [{
+                                         label: "Humidity",
+                                         backgroundColor: "rgba(0,0,0,0.1)",
+                                       borderColor: "#00FFFF",
+                                       data: yValues
+                                   }]},
+                                   options: {}
+                                 });
+                                 </script></div>  
+                             <div><canvas id="Mychart9" style="width:100%;max-width:800px", text-align: right></canvas>
+                                 <!--Graph NUMBER 3!-->
+ 
+                                 <script> 
+                                 
+                                 var xValues = ['1:00 am March 10th','6:00 am march 10th', '12:00 pm march 10th','1:00 am march 11th', '6:00 am march 11th','12:00 pm march 11th,']
+                                 var yValues = [103,105,104,110,102,102,]
+                                 var myChart = new Chart("Mychart9", {
+                                   type: "line",
+                                   data: { labels: xValues,
+                                     datasets: [{
+                                         label: "Weight",
+                                         backgroundColor: "rgba(0,0,0,0.1)",
+                                       borderColor: "#00FF00",
+                                       data: yValues
+                                   }]},
+                                   options: {}
+                                 });
+                                 </script></div>
+                          </div>
+                    </div>
+                </details>
+
+                 <!-- Accordion section 4 -->
+                 <details class="acc-group">
+                    <summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Hive 4 Data</summary>
+                    <div class="tgl-panel">
+                        <!-- Section 4's content -->
+                        <H2>Hive 4 content</H2>
+                        <div class="container">
+                            <div>Temperature</div>
+                            <div>Humidity</div>  
+                            <div>Weight</div>
+                          </div>
+                    </div>
+                </details>
+
+                <!-- Accordion section 5 -->
+                <details class="acc-group">
+                    <summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Hive 5 Data</summary>
+                    <div class="tgl-panel">
+                        <!-- Section 5's content -->
+                        <H2>Hive 5 content</H2>
+                        <div class="container">
+                            <div>Temperature</div>
+                            <div>Humidity</div>  
+                            <div>Weight</div>
+                          </div>
+                    </div>
+                </details>
+
+                <!-- Accordion section 6 -->
+                <details class="acc-group">
+                    <summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Hive 6 Data</summary>
+                    <div class="tgl-panel">
+                        <!-- Section 6's content -->
+                        <H2>Hive 6 content</H2>
+                        <div class="container">
+                            <div>Temperature</div>
+                            <div>Humidity</div>  
+                            <div>Weight</div>
+                          </div>
+                    </div>
+                </details>
+
+                <!-- Accordion section 7 -->
+                <details class="acc-group">
+                    <summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Hive 7 Data</summary>
+                    <div class="tgl-panel">
+                        <!-- Section 7's content -->
+                        <H2>Hive 7 content</H2>
+                        <div class="container">
+                            <div>Temperature</div>
+                            <div>Humidity</div>  
+                            <div>Weight</div>
+                          </div>
+                    </div>
+                </details>
+
+                <!-- Accordion section 8 -->
+                <details class="acc-group">
+                    <summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Hive 8 Data</summary>
+                    <div class="tgl-panel">
+                        <!-- Section 8's content -->
+                        <H2>Hive 8 content</H2>
+                        <div class="container">
+                            <div>Temperature</div>
+                            <div>Humidity</div>  
+                            <div>Weight</div>
+                          </div>
+                    </div>
+                </details>
+
+                 <!-- Accordion section 9 -->
+                 <details class="acc-group">
+                    <summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Hive 9 Data</summary>
+                    <div class="tgl-panel">
+                        <!-- Section 9's content -->
+                        <H2>Hive 9 content</H2>
+                        <div class="container">
+                            <div>Temperature</div>
+                            <div>Humidity</div>  
+                            <div>Weight</div>
+                          </div>
+                    </div>
+                </details>
+            </div>
     </body>
 </html>
